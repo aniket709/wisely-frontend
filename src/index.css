@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-card {
+    animation: slideUpFade 0.5s ease-out;
+  }
+
+  @keyframes slideUpFade {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #020617; 
+  color: #f1f5f9; 
+  scroll-behavior: smooth;
+}
