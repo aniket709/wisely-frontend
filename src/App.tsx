@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import SearchBox from './components/SearchBox';
 import CountryCard from './components/CountryCard';
 import Loader from './components/Loader';
