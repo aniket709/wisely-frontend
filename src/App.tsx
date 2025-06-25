@@ -24,7 +24,7 @@ const App: React.FC = () => {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.get<CountryData>(`http://localhost:10000/api/v1/${name}`);
+      const res = await axios.get<CountryData>(`https://wisely-backend.onrender.com/api/v1/${name}`);
       setData(res.data);
     } catch (err) {
       setError('❌ Country not found.');
