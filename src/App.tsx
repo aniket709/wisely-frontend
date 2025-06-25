@@ -24,6 +24,7 @@ const App: React.FC = () => {
     setLoading(true);
     setError('');
     try {
+      console.log("Fetching country:", name);
       const res = await axios.get<CountryData>(`https://wisely-backend.onrender.com/api/v1/${name}`);
       setData(res.data);
     } catch (err) {
@@ -49,3 +50,5 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
